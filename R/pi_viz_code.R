@@ -58,6 +58,8 @@ pal_wes <- wes_palette("Zissou1", 10, type = "continuous")
 viz_wes <- plot_discrete+
   scale_color_manual(values = pal_wes)
 
-ggsave("viridis.png", plot = viz_vir, path="figures/", width=10,height=10)
-ggsave("brewer.png", plot = viz_brew, path="figures/", width=10,height=10)
-ggsave("wes.png", plot = viz_wes, path = "figures/", width=10,height=10)
+size <- 7
+
+ggsave("viridis.png", plot = viz_vir, path="figures/", width=size,height=size)
+ggsave("brewer.png", plot = viz_brew, path="figures/", width=size,height=size)
+ggsave("wes.png", plot = viz_wes, path = "figures/", width=size,height=size)
